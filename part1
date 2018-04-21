@@ -1,0 +1,80 @@
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+list=[]
+for k in range(2000,3201):
+  if (k%7==0) and (k%5!=0)
+    list.append(str(k))
+print ",".join(list)
+
+
+Write a program which can compute the factorial of a given numbers.
+The results should be printed in a comma-separated sequence on a single line.
+Suppose the following input is supplied to the program:
+
+def factorialfxn(x):
+  if x== 0:
+    return 1
+  reteurn x* factorialfxn(x-1)
+
+
+x=int(raw_input())
+print factorialfxn(x)
+
+With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+Suppose the following input is supplied to the program:
+
+n=int(raw_input())
+d=dict()
+for i in range(1,n+1):
+    d[i]=i*i
+dictX[i] = i*i
+{1:1, 2:4, 3:9}
+
+print d
+
+
+Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+Suppose the following input is supplied to the program:
+
+List ['a','b','c']
+tuple ('a','b','c')
+
+
+values=raw_input()----
+
+values.split(",") //creates list
+tuple(values.split(",")) //crates tuple
+
+l=values.split(",")
+t=tuple(l)
+
+
+Define a class which has at least two methods:
+getString: to get a string from console input
+printString: to print the string in upper case.
+Also please include simple test function to test the class methods.
+
+
+Solution:
+class InputOutString(object):
+    def __init__(self):
+        self.s = ""
+
+    def getString(self):
+        self.s = raw_input()
+
+    def printString(self):
+        print self.s.upper()
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
+
+Write a program that calculates and prints the value according to the given formula:
+Q = Square root of [(2 * C * D)/H]
+items=[x for x in raw_input().split(',')]
+for d in items:
+value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
+
